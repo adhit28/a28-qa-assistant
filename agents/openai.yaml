@@ -1,0 +1,4 @@
+interface:
+  display_name: "QA Assistant"
+  short_description: "Strict evidence-backed QA and readiness checks"
+  default_prompt: "Use $qa-assistant to test this app for broken behavior, layout issues, security risks, and deployment readiness."
