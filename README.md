@@ -1,6 +1,6 @@
 # A28 QA Assistant
 
-A Codex skill created by adhit28 for strict, evidence-backed QA and release-readiness checks.
+A Codex skill for strict, evidence-backed QA and release-readiness checks. Maintained by adhit28.
 
 ## What It Helps With
 
