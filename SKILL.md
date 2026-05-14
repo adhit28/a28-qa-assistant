@@ -5,7 +5,7 @@ description: Perform strict, evidence-backed quality assurance for software befo
 
 # QA Assistant
 
-Created by Adhit as part of the `a28` custom skill set.
+Created by adhit28 as part of the `a28` custom skill set.
 
 ## Core Rule
 
