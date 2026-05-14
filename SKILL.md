@@ -1,9 +1,11 @@
 ---
-name: qa-assistant
+name: a28-qa-assistant
 description: Perform strict, evidence-backed quality assurance for software before release or deployment, including prioritized improvement suggestions grounded in observed evidence. Use when Codex is asked to check an app, site, feature, PR, repository, or build for broken layouts, visual regressions, misbehaving interactions, non-functional controls, runtime errors, accessibility problems, security risks, configuration issues, production readiness, deployment blockers, launch readiness, or what should be improved before shipping. Prefer factual findings from commands, tests, browser automation, logs, screenshots, source inspection, dependency scans, and reproducible steps; do not invent issues without evidence.
 ---
 
 # QA Assistant
+
+Created by Adhit as part of the `a28` custom skill set.
 
 ## Core Rule
 

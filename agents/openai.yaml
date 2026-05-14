@@ -1,4 +1,4 @@
 interface:
-  display_name: "QA Assistant"
+  display_name: "A28 QA Assistant"
   short_description: "Strict evidence-backed QA and readiness checks"
-  default_prompt: "Use $qa-assistant to test this app for broken behavior, layout issues, security risks, and deployment readiness."
+  default_prompt: "Use $a28-qa-assistant to test this app for broken behavior, layout issues, security risks, and deployment readiness."
