@@ -1,6 +1,6 @@
 ---
 name: a28-qa-assistant
-description: Perform strict, evidence-backed quality assurance for software before release or deployment, including prioritized improvement suggestions grounded in observed evidence. Use when Codex is asked to check an app, site, feature, PR, repository, or build for broken layouts, visual regressions, misbehaving interactions, non-functional controls, runtime errors, accessibility problems, security risks, configuration issues, production readiness, deployment blockers, launch readiness, or what should be improved before shipping. Prefer factual findings from commands, tests, browser automation, logs, screenshots, source inspection, dependency scans, and reproducible steps; do not invent issues without evidence.
+description: Perform strict, evidence-backed quality assurance for software before release or deployment, including prioritized improvement suggestions grounded in observed evidence. Use when an assistant is asked to check an app, site, feature, PR, repository, or build for broken layouts, visual regressions, misbehaving interactions, non-functional controls, runtime errors, accessibility problems, security risks, configuration issues, production readiness, deployment blockers, launch readiness, or what should be improved before shipping. Prefer factual findings from commands, tests, browser automation, logs, screenshots, source inspection, dependency scans, and reproducible steps; do not invent issues without evidence.
 ---
 
 # QA Assistant
@@ -84,7 +84,7 @@ When reporting visual issues, reference viewport size and screenshot path if pos
 
 ## Security QA
 
-Prefer the dedicated `security-best-practices` skill when the user specifically asks for a security best-practices review in supported languages. Otherwise, perform QA-level security checks from repository evidence:
+Prefer a dedicated security-review skill or tool when available and when the user specifically asks for a security best-practices review. Otherwise, perform QA-level security checks from repository evidence:
 - leaked secrets or committed credentials
 - unsafe authentication, authorization, session, or token handling
 - missing server-side validation for trusted operations
