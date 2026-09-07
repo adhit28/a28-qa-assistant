@@ -1,6 +1,12 @@
 # A28 QA Assistant
 
-A portable AI-agent skill for strict, evidence-backed QA and release-readiness checks, with Codex/OpenAI metadata included. Maintained by adhit28.
+## Overview
+
+A reusable coding-agent skill for strict, evidence-backed QA and release-readiness checks, with an `agents/openai.yaml` metadata file for Codex. Maintained by adhit28.
+
+## Why Use It
+
+Use this skill before release or deployment when a project needs a disciplined, evidence-backed assessment instead of a list of generic concerns. It prioritizes observed defects and clearly separates confirmed failures, unverified risks, and improvement suggestions, making the resulting report more actionable for release decisions.
 
 ## What It Helps With
 
@@ -10,7 +16,7 @@ A portable AI-agent skill for strict, evidence-backed QA and release-readiness c
 - Performing QA-level security checks from concrete repository evidence
 - Reporting findings with severity, evidence, impact, reproduction steps, and fix direction
 
-## Usage
+## Use in Codex
 
 Invoke the skill from Codex:
 
@@ -26,9 +32,13 @@ For a narrower pass:
 $a28-qa-assistant run smoke QA on this feature before release
 ```
 
-## Safety
+## Requirements and Scope
 
-The skill avoids destructive commands, data migrations, load tests, security attack tooling, and audit-fix commands unless the user explicitly approves them.
+The skill uses the project’s available tests, runtime, and browser tooling; unavailable checks must be reported as untested rather than passed. It avoids destructive commands, data migrations, load tests, security attack tooling, and audit-fix commands unless the user explicitly approves them.
+
+## AI Model Support
+
+This package declares no model-specific requirement. In Codex, use the model configured for the session, provided it can load skills. Outside Codex, a coding agent may use the Markdown instructions when it can read `SKILL.md` and access the relevant repository, test, and optional browser tools. The skill does not add model capabilities, credentials, or test infrastructure.
 
 ## Repository Topics
 
